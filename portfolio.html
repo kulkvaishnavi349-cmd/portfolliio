@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Portfolio Website</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Navbar */
+nav{
+    background:#081b4b;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 10%;
+    background:white;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#2563eb;
+}
+
+.hero-text h2{
+    margin:10px 0;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.hero img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+}
+
+/* About */
+.about{
+    display:flex;
+    justify-content:space-between;
+    padding:50px 10%;
+    background:#f8f8f8;
+}
+
+.about-left{
+    width:50%;
+}
+
+.about-right p{
+    margin:10px 0;
+}
+
+/* Skills */
+.skills{
+    text-align:center;
+    padding:50px 10%;
+}
+
+.skill-boxes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+
+.skill{
+    background:white;
+    padding:20px;
+    width:150px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Projects */
+.projects{
+    padding:50px 10%;
+}
+
+.project-cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:300px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+/* Contact */
+.contact{
+    padding:50px 10%;
+    text-align:center;
+}
+
+.contact-boxes{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.contact-box{
+    background:white;
+    padding:20px;
+    width:250px;
+    border-radius:10px;
+}
+
+/* Footer */
+footer{
+    background:#081b4b;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+        nav{
+    background:#081b4b;
+    color:white;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 10%;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:30px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+}
+
+/* Hero Section */
+.hero{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:60px 10%;
+    background:white;
+}
+
+.hero-text h1{
+    font-size:50px;
+    color:#2563eb;
+}
+
+.hero-text h2{
+    margin:10px 0;
+}
+
+.hero-text p{
+    margin:20px 0;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 25px;
+    background:#2563eb;
+    color:white;
+    text-decoration:none;
+    border-radius:5px;
+    margin-right:10px;
+}
+
+.btn-outline{
+    background:white;
+    color:#2563eb;
+    border:2px solid #2563eb;
+}
+
+.hero img{
+    width:350px;
+    height:350px;
+    border-radius:50%;
+}
+
+/* About */
+.about{
+    display:flex;
+    justify-content:space-between;
+    padding:50px 10%;
+    background:#f8f8f8;
+}
+
+.about-left{
+    width:50%;
+}
+
+.about-right p{
+    margin:10px 0;
+}
+
+/* Skills */
+.skills{
+    text-align:center;
+    padding:50px 10%;
+}
+
+.skill-boxes{
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    gap: 10px;
+    flex-wrap:wrap;
+    margin-top:15px;
+}
+
+.skill{
+    background:white;
+    padding:0px;
+    width:200px;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+    gap:30px;
+}
+
+/* Projects */
+.projects{
+    padding:50px 10%;
+}
+.project-cards{
+    display:flex;
+    justify-content:center;
+    gap: 30px;
+    flex-wrap:wrap;
+    margin-top:30px;
+}
+.projects{
+    text-align:center;
+    padding:50px 10%;
+}
+.project-cards{
+    display:flex;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.card{
+    background:white;
+    width:260px;
+    height: 250px;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+.card img{
+    width:200px;
+    height:190px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <h2>Rahul <span style="color:#2563eb;">Sharma</span></h2>
+    <ul>
+     
+     <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-text">
+        <h3>Hi, I'm</h3>
+        <h1>Rahul Sharma</h1>
+        <h2>Web Developer</h2>
+        <p>I create simple, responsive and user-friendly websites.</p>
+
+        <a href="#" class="btn">View My Work</a>
+        <a href="#" class="btn btn-outline">Contact Me</a>
+    </div>
+
+    <img src="img protfolio/profile.jpg" alt="Profile">
+</section>
+
+<!-- About -->
+<section class="about">
+    <div class="about-left">
+        <h2>About Me</h2>
+        <p>
+            I'm a passionate web developer with strong focus on
+            front-end development using HTML, CSS and JavaScript.
+        </p>
+    </div>
+
+    <div class="about-right">
+        <p><i class="fa fa-user" style="font-size:24px; margin-right:10px;"></i><b>Age:</b> 21</p>
+        <p><i class="fa fa-graduation-cap" style="font-size:24px; margin-right:10px;"></i><b>Education:</b> BCA</p>
+        <p><i class="material-icons" style="font-size:24px; margin-right: 10px;"></i></i><b>Location:</b> India</p>
+        <p><i class="material-icons"></i></i><b>Email:</b> rahul@example.com</p>
+    </div>
+</section>
+
+<!-- Skills -->
+<section class="skills">
+    <h2>My Skills</h2>
+
+    <div class="skill-boxes">
+        <div class="skill"><img src="img protfolio/html" height="180px" width="200px"> HTML</div>
+        <div class="skill"><img src="img protfolio/css.png"  height="170px" width="180px">CSS</div>
+        <div class="skill"><img src="img protfolio/javascript.png" height="180px" width="200px">JavaScript</div>
+        <div class="skill"><img src="img protfolio/bootstrap.jpg" height="180px" width="200px">Bootstrap</div>
+        <div class="skill"><img src="img protfolio/react.png" height="180px" width="200px">react</div>
+
+    </div>
+</section>
+
+<!-- Projects -->
+<section class="projects">
+    <h2 >My Projects</h2><br><br>
+
+    <div class="project-cards">
+
+        <div class="card">
+            <img src="img protfolio/laptop photo.png" alt="">
+            <div class="card-content">
+                <h3>Student Management System</h3>
+                <p>Manage students, courses and attendance.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img protfolio/note.jpg" alt="">
+            <div class="card-content">
+                <h3>Portfolio Website</h3>
+                <p>Responsive portfolio website.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="img protfolio/comp.jpg" alt="">
+            <div class="card-content">
+                <h3>Landing Page</h3>
+                <p>Modern landing page using HTML and CSS.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Contact -->
+<section class="contact">
+    <h2>Contact Me</h2><br><br>
+
+    <div class="contact-boxes">
+        <div class="contact-box">rahul@example.com</div>
+        <div class="contact-box">+91 98765 43210</div>
+        <div class="contact-box">Lucknow, India</div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>© 2024 Rahul Sharma. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
